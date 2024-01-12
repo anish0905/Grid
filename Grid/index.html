@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#grid-container{
+
+    height:80vh;
+    width:80vw;
+    background-color: rgb(145, 25, 25);
+    margin: auto;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-rows: 100px 200px 100px; */
+    /* column-gap: 50px;
+    row-gap: 50px; */
+    gap: 50px 20px;
+   
+}
+.grid-items{
+    background-color: yellow;
+    border: 1px solid black;
+}
+/* #grid-items1{
+    gri
+} */
+
+
+#grid-items3{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#grid-items4{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+}
+#grid-items8{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+}
+
+#grid-items
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- div#grid-container>div#grid-items$.grid-items{grid-box$}*8 -->
+
+    <div id="grid-container">
+        <div id="grid-items1 class="grid-items">grid-box1</div>
+        /* <!-- <div id="grid-items2 class="grid-items">grid-box2</div>   --> */
+        <div id="grid-items3 class="grid-items">grid-box3</div>
+        <div id="grid-items4  class="grid-items">grid-box4</div>
+        <div id="grid-items5 class="grid-items">grid-box5</div>
+        <!-- <div id="grid-items6 class="grid-items">grid-box6</div> -->
+        <!-- <div id="grid-items7 class="grid-items">grid-box7</div> -->
+        <div id="grid-items8 class="grid-items">grid-box8</div>
+    </div>
+</body>
+</html>
